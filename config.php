@@ -1,6 +1,6 @@
 <?php
 
-$FromName = 'TUTAOCRM';
+$FromName = 'TUTAOCRM("土淘CRM在线订管理系统")';
 
 $allow_sep = '60';  // 60秒内不能重复提交订单，防恶意刷单
 
