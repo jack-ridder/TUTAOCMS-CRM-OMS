@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>土淘CRM在线订单管理系统 - 演示模板</title>
+<script type="text/javascript" src="js/tutaodq.js" charset="utf-8"></script>
+<style type="text/css">
+    body{background:#FFF;} 
+    #tutaoorder{width:950px;background:#EBF7FF;}
+    .tutaowarp{border:1px solid #B8E3FF;}
+    .tutaotitle{border-bottom:1px solid #B8E3FF;}
+    .tutaorxian{border-right:1px solid #B8E3FF;}
+    .tutaosubbox input{background:#09F;}
+</style>
+</head>
+<body>
+<div id="oms_index">
+<div class="tutaowarp">
+    <div class="tutaoorderl">
+        <div class="tutaoforml" id="tutaoforml">
+            <div class="tutaorxian">
+                <form id="tutaoform" name="tutaoform" action="../oms_index.php" method="post" onsubmit="return postcheck()" target="_parent">
+                <input type="hidden" id="tutaoddll" name="tutaoddll" value="tutaoddll" />
+                <input type="hidden" name="tutaoprice" value="580" />
+                <div class="tutaotitle"><img src="images/logo.gif" /></div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>选择产品</label>
+                    <div class="tutaodxbox green">
+                        <input type="radio" name="tutaoproduct" id="a1" value="product 1" alt="385" onclick="pricea()" /><label for="a1"></label><br />
+                        <input type="radio" checked name="tutaoproduct" id="a2" value="product 2" alt="580" onclick="pricea()" /><label for="a2"><img src="images/hot.gif" /></label><br />
+                        <input type="radio" name="tutaoproduct" id="a3" value="product 3" alt="785" onclick="pricea()" /><label for="a3"></label><br />
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>数量/价格</label>
+                    <div class="tutaotext3box">
+                        <input type="text" name="tutaomun" value="1" onChange="pricea()"> 总价<div id="showprice">580</div>元
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>收货人姓名</label>
+                    <div class="tutaotextbox">
+                        <input type="text" name="tutaoname" />
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>手机号码</label>
+                    <div class="tutaotextbox">
+                        <input type="text" name="tutaomob" />
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>所在地区</label>
+                    <div class="tutaoxlbox">
+                        <select name="tutaoprovince" class="tutaodqxl"></select><select name="tutaocity" class="tutaodqxl"></select><select name="wfarea" class="wfdqxl"></select>
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>详细地址</label>
+                    <div class="tutaotextbox">
+                        <input type="text" name="tutaoaddress" />
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>付款方式</label>
+                    <div class="tutaodxbox">
+                        <input type="radio" checked="checked" name="tutaopay" id="b1" value="货到付款" onclick="opay();return changeItem(0);" /><label for="b1"><img src="images/fka.gif" /></label>
+                        <input type="radio" name="tutaopay" id="b2" value="其他" onclick="opay2();return changeItem(1);" /><label for="b2"><img src="images/fkb.gif" /></label>
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <div id="paydiv0" class="paysm">
+                        <p><img src="images/fkat.gif" /></p>
+                    </div>
+                    <div id="paydiv1" class="paysm" style="display:none;">					
+                        <p><img src="images/fkbt.gif" /></p>							
+                    </div>
+                    <div id="paydiv2" class="paysm" style="display:none;">
+                        <p><img src="images/fkct.gif" /></p>
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx">留言</label>
+                    <div class="tutaotext2box">
+                        <textarea name="tutaoguest"></textarea>
+                    </div>
+                </div>
+                <div class="tutaobdbox">
+                    <label class="tutaobdxx"><em>*</em>验证码</label>
+                    <div class="tutaotext3box">
+<input type="text" name="tutaocode" class="tutaocode" /><img src="./../public/tutaocode.php"  height="29" width="70" alt="刷新" title="刷新" onClick="this.src=this.src+'?'" />
+                    </div>
+                </div>
+                <div class="tutaosubbox">
+                    <input type="submit" name="tutaosubmit" value="提交订单" />
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tutaoorderr">
+        <div class="tutaoformr">
+            <div class="tutaotitle"><img src="images/logo.gif" /></div>
+            <div id="tutaofahuo" style="overflow:hidden;">
+                <div id="tutaofahuo1" style="overflow:hidden;"><script type="text/javascript" src="js/tutaofh.js"></script></div>
+                <div id="tutaofahuo2"></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+</div>
+<script type="text/javascript" src="js/tutaofoot.js"></script>
+</body>
+</html>
