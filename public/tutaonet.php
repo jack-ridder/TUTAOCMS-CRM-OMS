@@ -7,11 +7,11 @@ $out_trade_no = $GLOBALS[base64_decode('SUlJSUlJSUlJMWwx')](base64_decode
     ('WW1kSGlz'));
 $dddate = $GLOBALS[base64_decode('SUlJSUlJSUlJMWwx')](base64_decode
     ('WS1tLWQgSDpp'));
-$wproduct = $_POST[base64_decode('d2Zwcm9kdWN0')];
-$tutaomun = $_POST[base64_decode('d2ZtdW4=')];
-$tutaoprice = $_POST[base64_decode('d2ZwcmljZQ==')];
+$wproduct = $_POST[base64_decode('dHV0YW9wcm9kdWN0')];
+$tutaomun = $_POST[base64_decode('dHV0YW9tdW4=')];
+$tutaoprice = $_POST[base64_decode('dHV0YW9wcmljZQ==')];
 $zfbjg = $tutaoprice * $alipayzk;
-$tutaoname = $_POST[base64_decode('d2ZuYW1l')];
+$tutaoname = $_POST[base64_decode('dHV0YW9uYW1l')];
 $tutaoprovince = $_POST['tutaoprovince'];
 $tutaocity = $_POST['tutaocity'];
 $tutaoarea = $_POST['tutaoarea'];
